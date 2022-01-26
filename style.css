@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-lmjdLh.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+
+body {
+     margin: 0;
+    padding: 0;
+    background-image: url("https://github.com/ChristophGrothe/wonderful/blob/main/potter.jpg?raw=true");
+    color: white;
+    line-height: 200%;
+      text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+    /*! height: 50em; */
+}
+
+header li {
+    list-style-type: none;
+    font-weight: 800;
+}
+
+header {
+       display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
+    text-transform: uppercase;   
+}
+
+header div {
+    margin-left: 10%;
+    position: relative;
+    bottom: 20%;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+}
+
+.grid-about, .grid-pictures, .grid-websites, .grid-others, header div {
+    grid-row-start: 2;
+}
+
+.grid-about {
+    grid-column-start: 2;
+}
+
+.grid-pictures {
+    grid-column-start: 3;
+}
+
+.grid-websites {
+    grid-column-start: 4;
+}
+
+.grid-others {
+    grid-column-start: 5;
+}
+
+.letter {
+    color: #49ff18 ;
+}
+
+h1 {
+   text-align: center;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+.intro {
+   display: grid; 
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+}
+
+.intro-p {
+    grid-column-start: 2;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 125%;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+}
+
+.border {
+    border-radius: 1em;
+}
+
+.car {
+    grid-area: 1/1/2/2;
+}
+
+.fanbook {
+    margin-top: 2em;
+    grid-area: 1/2/2/3;
+}
+
+.shop {
+   grid-area: 1/3/2/4;
+}
+
+.car-fanbook-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25em 15em 25em;
+    justify-items: center;
+}
+
+img {
+	box-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+}
+
+.subtext {
+    font-style: italic;
+    font-size: 110%;
+}
+
+.cartext {
+    grid-area: 1/1/2/2;
+    text-align: center;
+    margin-top: 10em;
+}
+
+.fanbooktext {
+    grid-area: 1/2/2/3;
+    align-self: center;
+    text-align: center;
+    margin-top: 15em;
+}
+
+.shoptext {
+    grid-area: 1/3/2/4;
+   
+    text-align: center;
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 60%;
+}
+
+.neon {
+    display: grid;
+    grid-area: 2/1/3/2;  
+}
+   
+.neontext {
+    grid-area: 2/1/3/2;
+    margin-top: 5em;  
+}
+
+.coffee {
+    grid-area: 2/2/3/3;
+    margin-top: 2em;
+    display: grid;
+    justify-self: end;
+}
+
+.coffeetext {
+    grid-area: 2/2/3/3;
+    display: grid;
+    width: 50%;
+    margin-top: 3em;
+}
+
+.plnts {
+    grid-area: 2/3/3/4;
+    display: grid;
+    justify-items: end;
+}
+
+.plntstext {
+    grid-area: 2/3/3/4;
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+.lama {
+    grid-area: 3/1/4/2;
+}
+
+.lamatext {
+   grid-area: 3/1/4/3;
+    width: 25%;  
+}
+
+footer section {
+	display: grid;
+	grid-template-columns: 30em 20em;
+	height: 8em;
+    width: 100%;
+	align-items: center;
+}
+
+.Godrics-grid {
+	grid-column-start: 2;
+}
+
+.registration-grid {
+	grid-column-start: 3;
+}
+
+footer {
+    color: #fefafa;
+     margin: 0;
+    padding: 0;
+    margin-top: 4em;
+    background-image: url("https://github.com/ChristophGrothe/wonderful/blob/main/butterfly.jpg?raw=true");
+    background-position: center;
+	box-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+}
+
+.p-margin {
+    margin: 0;
+}
+
+.chess {
+    grid-area: 3/3/4/4;
+    display: grid;
+    align-self: center;
+}
+
+.chesstext {
+    grid-area: 3/3/4/4;
+    display: grid;
+    align-self: center;
+    margin-top: 15em;
+}
