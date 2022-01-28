@@ -218,7 +218,7 @@ img {
     width: 25%;  
 }
 
-footer section {
+footer {
 	display: grid;
 	grid-template-columns: 30em 20em;
 	height: 8em;
